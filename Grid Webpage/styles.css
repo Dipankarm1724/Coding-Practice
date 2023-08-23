@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contest-layout{
+    display: grid;
+    grid-template-rows: (auto,1fr,auto);
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+header{
+    margin-bottom: 20px;
+}
+
+nav ul{
+   list-style-type: none;
+   padding: 0;
+   margin: 0; 
+}
+
+nav li{
+    display: inline;
+    margin: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+}
+
+main{
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 28px;
+}
+h2{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.cta-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7289DA;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+footer{
+    font-size: 12px;
+    color: #777;
+}
