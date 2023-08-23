@@ -4,6 +4,40 @@
     box-sizing: border-box;
 }
 
+.logo-name {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.frofile-image {
+    width: 60px;
+    height: 60px;
+    background-image: url('/image/my_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 0.2px solid #102C57; */
+    border-radius: 50px;
+    box-shadow: 1px 2px 10px #888888;
+    margin: 15px 15px 0px 0px;
+}
+
 body {
     background-color: #F8F0E5;
 }
@@ -59,7 +93,6 @@ button {
 .webpage1 {
     width: 200px;
     height: 200px;
-    /* background-image: url('./image/image.jpg'); */
     background-color: #102C57;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,10 +120,4 @@ footer {
     color: #102C57;
     background-color: darksalmon;
     border-radius: 50%;
-}
-
-.nav-item {
-    font-size: 3rem;
-    margin: 30px 20px 20px 20px;
-    color: black;
 }
