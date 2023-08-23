@@ -1,0 +1,32 @@
+/* css code goes here */
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+header h1{
+    margin: 0;
+}
+
+main{
+    text-align: center;
+    margin-top: 50px;
+}
+.gradient-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0) linear-gradient(to left bottom, rgb(255, 106, 0), rgb(238, 9, 121));
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+input[type="checkbox"]:checked + .change-gradient-label + .gradient-background {
+    background: linear-gradient(to left bottom, rgb(79, 172, 254), rgb(0, 242, 254));
+}

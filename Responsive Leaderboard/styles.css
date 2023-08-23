@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  .table {
+    border: 2px solid #333333;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .table-header {
+    background-color: #cccccc;
+  }
+  
+  .table-header-cell {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    padding: 10px;
+  }
+  
+  .table-body-cell {
+    font-size: 20px;
+    color: #666666;
+    padding: 10px;
+  }
+  
+  .table-body-row:nth-child(even) {
+    background-color: #eeeeee;
+  }
+  
+  .table-body-row:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .table {
+      width: 90%;
+      margin: 0 10px;
+    }
+  
+    .table-body-cell {
+      padding: 5px;
+    }
+  
+    .rank,
+    .country {
+      display: none;
+    }
+  }

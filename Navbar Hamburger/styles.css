@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    font-weight: bold;
+  }
+  
+  .navbar-toggle {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+  }
+  
+  .navbar-hamburger,
+  .navbar-cross {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin-left: 20px;
+  }
+  
+  .navbar-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  /* Your existing CSS for display width more than 600px */
+
+/* CSS for display width less than 600px */
+@media (max-width: 600px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  .navbar-item {
+    margin: 10px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-hamburger,
+  .navbar-cross {
+    position: relative;
+  }
+
+  .navbar-hamburger:before,
+  .navbar-hamburger:after,
+  .navbar-cross:before,
+  .navbar-cross:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .navbar-hamburger:before {
+    transform: translateY(-6px);
+  }
+
+  .navbar-hamburger:after {
+    transform: translateY(6px);
+  }
+
+  .navbar-cross:before {
+    transform: rotate(45deg);
+  }
+
+  .navbar-cross:after {
+    transform: rotate(-45deg);
+  }
+
+  /* Additional CSS for 'active' class */
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .change .navbar-hamburger {
+    height: 0px;
+  }
+
+  .change .navbar-hamburger:before {
+    height: 1.5px;
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .change .navbar-hamburger:after {
+    height: 1.5px;
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .change .navbar-cross:before {
+    transform: rotate(0);
+  }
+
+  .change .navbar-cross:after {
+    transform: rotate(0);
+  }
+}

@@ -1,0 +1,82 @@
+/* Do not remove this code */
+
+.pause-btn::before {
+  content: "||";
+  color: #fff;
+}
+
+.prev-btn::before {
+  content: "<<";
+  color: #fff;
+}
+
+.next-btn::before {
+  content: ">>";
+  color: #fff;
+}
+
+.music-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 300px;
+  padding: 10px;
+  background-color: #c3eed0;
+  border-radius: 5px;
+}
+
+.album-cover img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.music-info {
+  flex: 1;
+  margin-left: 20px;
+  /* padding: 20px; */
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.artist {
+  font-size: 14px;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.pause-btn,
+.prev-btn,
+.next-btn {
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+  background-color: rgb(75, 71, 71);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pause-btn::before {
+  content: "||";
+  color: white;
+}
+
+.prev-btn::before {
+  content: "<<";
+  color: white;
+}
+
+.next-btn::before {
+  content: ">>";
+  color: white;
+}
